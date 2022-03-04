@@ -1,0 +1,466 @@
+<html>
+<head>
+<title>Count My Cash </title>
+<meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+ <meta name="description" content="Hi, This is the cash counter..."> 
+  <meta name="keywords" content="Count My Cash">   
+  <meta name="author" content="Paras Dhiman">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+#NoteOf2000,#NoteOf500,#NoteOf200,#NoteOf100,#NoteOf50,#NoteOf20,#NoteOf10,#Noteof5,#Noteof2,#NoteOf1{
+width:80%; border-radius:7px; 
+border-color:black;
+ text-align:center;
+ color:black;
+ background-color:white;
+}
+
+.buttons{
+background-color:Green; 
+width:60%;
+ height:40px; border-radius:5px;
+ font-size:20px;
+ color:white;
+ font-weight:900;
+text-shadow: 2px 2px black;
+border : 2px solid black;
+}
+pre{font-family: Arial;
+font-weight:560;
+    
+}
+}
+
+</style>
+</head>
+<body>
+<center>
+<H3>Count My Cash</H3>
+</center>
+<! getting the input from the user>
+<div> 
+<center>
+<table style=" //border: 1px solid black;
+width:80%;
+">
+    <tr><!for 2000>
+        <td style="width:49%; ">
+            <p id="2000">
+<pre>
+<label for ="NoteOf2000">2000 X </label><input type="number" id="NoteOf2000" name="NoteOf2000" placeholder="Enter 0,1,2,...."><! for 2000 notes ></input> 
+</pre> </p>
+        </td>
+        <td style="width:49%; text-align:right;">
+           <p id="Resultof2000" style="height:23px;">0</p><! indivisual output for 2000 >
+        </td>
+    </tr>
+    
+    <tr><!for 500>
+        <td>
+            <p id="500">
+<pre>
+<label for ="NoteOf500">500   X </label><input type="number" id="NoteOf500" name="NoteOf500" placeholder="Enter 0,1,2,...."><! for 500 notes >
+</pre></p>
+        </td>
+       
+        <td style="width:49%; text-align:right;"> <p id="Resultof500"style="height:23px";>0 </p><! indivisual output for 500 >
+        </td>
+    </tr>
+    
+     <tr><!for 200>
+        <td>
+            <p id="200"><pre>
+<label for ="NoteOf200">200   X </label><input type="number" id="NoteOf200" name="NoteOf2000" placeholder="Enter 0,1,2,...."><! for 200 notes >
+</pre></p>
+        </td>
+        <td style="width:49%; text-align:right;"><p id="Resultof200"style="height:23px;">0 </p><! indivisual output for 200 >
+        </td>
+    </tr>
+    
+     <tr><!for 100>
+        <td>
+            <p id="100"><pre>
+<label for ="NoteOf100">100   X </label><input type="number" id="NoteOf100" name="NoteOf100" placeholder="Enter 0,1,2,...."><! for 2000 notes ></pre></p>
+        </td>
+        <td style="width:49%; text-align:right;"><p id="Resultof100"style="height:23px;">0 </p><! indivisual output for 100 >
+
+        </td>
+    </tr>
+    
+     <tr><!for 50>
+        <td>
+            <p id="50"><pre>
+<label for ="NoteOf50">50     X </label><input type="number" id="NoteOf50" name="NoteOf50" placeholder="Enter 0,1,2,...."><! for 50 notes ></pre></p>
+        </td>
+        <td style="width:49%; text-align:right;"><p id="Resultof50"style="height:23px;">0 </p><! indivisual output for 50 >
+
+        </td>
+    </tr>
+    
+     <tr><!for 20>
+        <td>
+            <p id="20"><pre>
+<label for ="NoteOf20">20     X </label><input type="number" id="NoteOf20" name="NoteOf20" placeholder="Enter 0,1,2,...."><! for 20 notes ></pre></p>
+        </td>
+        <td style="width:49%; text-align:right;"><p id="Resultof20"style="height:22px;">0 </p><! indivisual output for 20 >
+
+        </td>
+    </tr>
+    
+     <tr><!for 10>
+        <td>
+            <p id="10"><pre>
+<label for ="NoteOf10">10     X </label><input type="number" id="NoteOf10" name="NoteOf10" placeholder="Enter 0,1,2,...."><! for 10 notes ></pre></p>
+        </td>
+        <td style="width:49%; text-align:right;"><p id="Resultof10"style="height:22px;">0 </p><! indivisual output for 10 >
+
+        </td>
+    </tr>
+    
+     <tr><!for 5>
+        <td>
+            <p id="5"><pre>
+<label for ="NoteOf5">5       X </label><input type="number" id="NoteOf5" name="NoteOf5" placeholder="Enter 0,1,2,...."><! for 5 notes ></pre></p>
+        </td>
+        <td style="width:49%; text-align:right;"><p id="Resultof5"style="height:21px;">0 </p><! indivisual output for 5 >
+
+        </td>
+    </tr>
+    
+     <tr><!for 2>
+        <td>
+            <p id="2"><pre>
+<label for ="NoteOf2">2       X </label><input type="number" id="NoteOf2" name="NoteOf2" placeholder="Enter 0,1,2,...."><! for 2 notes ></pre></p>
+        </td>
+        <td style="width:49%; text-align:right;"><p id="Resultof2"style="height:21px;">0 </p><! indivisual output for 2 >
+
+        </td>
+    </tr>
+    
+     <tr><!for 1>
+        <td>
+            <p id="1"><pre>
+<label for ="NoteOf1">1       X </label><input type="number" id="NoteOf1" name="NoteOf1" placeholder="Enter 0,1,2,...."><! for 1 notes ></pre></p>
+        </td>
+        <td style="width:49%; text-align:right;"><p id="Resultof1">0 </p><! indivisual output for 1 >
+
+        </td>
+    </tr>
+</table>
+</center>
+</div>
+
+
+
+<div>
+    <center>
+    <table style="//border: 1px solid black; 
+    width:80%; text-align:right;">
+        <tr><! total result in digits>
+            <td>
+                 <p id="PrintTotalAmount" style="  font-weight: 900;">0</p>
+            </td>
+        </tr>
+        
+        <tr><!total result in words>
+            <td><center>
+                <p id="PrintResultInWords" style="  font-weight: 900;">Words:</p>
+                
+                <button onclick="EngResToSpeek()"  class="buttons"  > Listen </button> 
+                 
+            </center></td>
+        
+        
+         <tr><!clear button>
+            <td>
+                <center>
+                   <pre>     </pre>
+                 <button onclick="ClearAllValue()"   class="buttons" >Clear</button> 
+                <br></center>
+            </td>
+        </tr>
+        
+    <table>
+        </center>
+<div>
+<br>
+ <center> You can Calculate upto 28,88,00,00,000Rs (Twenty Eight Arab Eighty Eight Crore Rupees).
+                </center>
+
+
+<! javascript>
+
+
+<script>
+var totalAmount=0;
+var noteValue=[0,0,0,0,0,0,0,0,0,0];
+// starting values are zero when window is loaded
+window.onload=function(){// just copy and past
+//document.getElementById("NoteOf2000").value=0;
+//document.getElementById("NoteOf500").value=0;
+//document.getElementById("NoteOf200").value=0;
+//document.getElementById("NoteOf100").value=0;
+//document.getElementById("NoteOf50").value=0;
+//document.getElementById("NoteOf20").value=0;
+//document.getElementById("NoteOf10").value=0;
+//document.getElementById("NoteOf5").value=0;
+//document.getElementById("NoteOf2").value=0;
+//document.getElementById("NoteOf1").value=0;
+}
+// end of the function
+
+
+
+setInterval(function(){ //calculate the 2000 notes values
+var val="0"+document.getElementById("NoteOf2000").value;
+
+if(val>10000000){
+    document.getElementById("NoteOf2000").value=""; 
+    alert("You can enter upto 10000000 value"); 
+}
+
+if(isNaN(val)==true){
+     document.getElementById("NoteOf2000").value=val="";
+alert("Please Enter Zero Or Heigher  Integer Value..."); 
+}
+
+var result=parseInt(val)*2000;
+noteValue[0]=result;
+document.getElementById("Resultof2000").innerHTML= " = "+result;
+},10)
+
+setInterval(function() {//calculate the 500 notes values>
+var val="0"+document.getElementById("NoteOf500").value;
+
+if(val>10000000){
+    document.getElementById("NoteOf500").value=""; 
+    alert("You can enter upto 10000000 value"); 
+}
+if(isNaN(val)==true){
+     document.getElementById("NoteOf500").value=val="";
+alert("Please Enter Zero Or Heigher  Integer Value..."); 
+}
+var result=parseInt(val)*500;
+noteValue[1]=result;
+document.getElementById("Resultof500").innerHTML= " = "+result;
+},10)
+
+
+setInterval(function (){//calculate the 200 notes values>
+var val="0"+document.getElementById("NoteOf200").value;
+if(val>10000000){
+    document.getElementById("NoteOf200").value=""; 
+    alert("You can enter upto 10000000 value"); 
+}
+if(isNaN(val)==true){
+     document.getElementById("NoteOf200").value=val="";
+alert("Please Enter Zero Or Heigher  Integer Value..."); 
+}
+var result=parseInt(val)*200;
+noteValue[2]=result;
+document.getElementById("Resultof200").innerHTML= " = "+result;
+},10)
+setInterval(function (){//calculate the 100 notes values>
+var val="0"+document.getElementById("NoteOf100").value;
+if(val>10000000){
+    document.getElementById("NoteOf100").value=""; 
+    alert("You can enter upto 10000000 value"); 
+    
+}
+if(isNaN(val)==true){
+     document.getElementById("NoteOf100").value=val="";
+alert("Please Enter Zero Or Heigher  Integer Value..."); 
+}
+var result=parseInt(val)*100;
+noteValue[3]=result;
+
+document.getElementById("Resultof100").innerHTML= " = "+result;
+},10)
+setInterval(function(){//calculate the 50 notes values>
+var val="0"+document.getElementById("NoteOf50").value;
+if(val>10000000){
+    document.getElementById("NoteOf50").value=""; 
+    alert("You can enter upto 10000000 value"); 
+}
+if(isNaN(val)==true){
+     document.getElementById("NoteOf50").value=val="";
+alert("Please Enter Zero Or Heigher  Integer Value..."); 
+}
+var result=parseInt(val)*50;
+noteValue[4]=result;
+document.getElementById("Resultof50").innerHTML= " = "+result;
+},10)
+
+setInterval(function (){//calculate the 20 notes values>
+var val="0"+document.getElementById("NoteOf20").value;
+if(val>10000000){
+    document.getElementById("NoteOf20").value=""; 
+    alert("You can enter upto 10000000 value"); 
+    
+}
+if(isNaN(val)==true){
+     document.getElementById("NoteOf20").value=val="";
+alert("Please Enter Zero Or Heigher  Integer Value..."); 
+}
+var result=parseInt(val)*20;
+noteValue[5]=result;
+document.getElementById("Resultof20").innerHTML= " = "+result;
+},10)
+setInterval(function (){//calculate the 10 notes values>
+var val="0"+document.getElementById("NoteOf10").value;
+if(val>10000000){
+    document.getElementById("NoteOf10").value=""; 
+    alert("You can enter upto 10000000 value"); 
+    
+}
+if(isNaN(val)==true){
+     document.getElementById("NoteOf10").value=val="";
+alert("Please Enter Zero Or Heigher  Integer Value..."); 
+}
+
+var result=parseInt(val)*10;
+noteValue[6]=result;
+document.getElementById("Resultof10").innerHTML= " = "+result;
+},10)
+
+setInterval(function (){//calculate the 5 notes values>
+var val="0"+document.getElementById("NoteOf5").value;
+if(val>10000000){
+    document.getElementById("NoteOf5").value=""; 
+    alert("You can enter upto 10000000 value"); 
+    
+}
+if(isNaN(val)==true){
+     document.getElementById("NoteOf5").value=val="";
+alert("Please Enter Zero Or Heigher  Integer Value..."); 
+}
+var result=parseInt(val)*5;
+noteValue[7]=result;
+document.getElementById("Resultof5").innerHTML= " = "+result;
+},10)
+setInterval(function(){//calculate the 2 notes values>
+var val="0"+document.getElementById("NoteOf2").value;
+if(val>10000000){
+    document.getElementById("NoteOf2").value=""; 
+    alert("You can enter upto 10000000 value"); 
+    
+}if(isNaN(val)==true){
+     document.getElementById("NoteOf2").value=val="";
+alert("Please Enter Zero Or Heigher  Integer Value..."); 
+}
+var result=parseInt(val)*2;
+noteValue[8]=result;
+document.getElementById("Resultof2").innerHTML= " = "+result;
+},10)
+setInterval(function(){//calculate the 1 notes values>
+var val="0"+document.getElementById("NoteOf1").value;
+if(val>10000000){
+    document.getElementById("NoteOf1").value=""; 
+    alert("You can enter upto 10000000 value"); 
+    
+}if(isNaN(val)==true){
+     document.getElementById("NoteOf1").value=val="";
+alert("Please Enter Zero Or Heigher  Integer Value..."); 
+}
+var result=parseInt(val)*1;
+noteValue[9]=result;
+document.getElementById("Resultof1").innerHTML= " = "+result;
+},10)
+function ClearAllValue(){
+document.getElementById("NoteOf1").value="";
+document.getElementById("NoteOf2").value="";
+document.getElementById("NoteOf5").value="";
+document.getElementById("NoteOf10").value="";
+document.getElementById("NoteOf20").value="";
+document.getElementById("NoteOf50").value="";
+document.getElementById("NoteOf100").value="";
+document.getElementById("NoteOf200").value="";
+document.getElementById("NoteOf500").value="";
+document.getElementById("NoteOf2000").value="";
+}
+
+setInterval(function(){// adding the all values
+totalAmount=noteValue[0]+noteValue[1]+noteValue[2]+noteValue[3]+noteValue[4]+noteValue[5]+noteValue[6]
++noteValue[7]+noteValue[8]+noteValue[9];
+
+
+document.getElementById("PrintTotalAmount").innerHTML="Total = "+totalAmount;
+
+
+},10);
+
+// calculate the result in words
+var units = [ "Zero", "One","Two","Three",
+    "Four", "Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve",
+    "Thirteen", "Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen"
+    ];
+	
+var tens = [ "","","Twenty","Thirty","Forty","Fifty",
+    "Sixty","Seventy","Eighty","Ninety"];
+
+var resultInWords="";
+
+function ConverterIntoWords(amount) {
+        var a=25;var b=10;
+      if (amount < 20) {
+            return units[amount];
+        }
+      if (amount < 100) {
+            return  tens[parseInt(amount / 10)] + ((amount % 10 > 0) ? " " + ConverterIntoWords((BigInt)(amount % 10)): " ");
+        }
+        if (amount < 1000) { 
+        return units[parseInt(amount/100)]+" Hundred " +
+                ((amount%100>0)? " And "
+                +ConverterIntoWords(amount%100): " ");
+        }
+        if (amount < 100000) {
+            return ConverterIntoWords(parseInt(amount / 1000)) + " Thousand "
+                    + ((amount % 1000 > 0) ? " " + ConverterIntoWords(amount % 1000) : " ");
+        }
+        if (amount < 10000000) {
+            return ConverterIntoWords(parseInt(amount / 100000)) + " Lakh "
+                    + ((amount % 100000 > 0) ? " " + ConverterIntoWords(amount % 100000) : " ");
+                }
+        if (amount < 1000000000) {
+            return ConverterIntoWords(parseInt(amount / 10000000)) + " Crore "
+                    + ((amount % 10000000 > 0) ? " "
+                    + ConverterIntoWords(amount % 10000000) : " ");
+        }
+        return ConverterIntoWords(parseInt(amount / 1000000000)) + " Arab "
+            + ((amount % 1000000000 > 0) ? " " 
+            + ConverterIntoWords(amount% 1000000000):" ") ;
+   
+   }// returning the value of the result
+
+
+setInterval(function(){// showing the result in words
+resultInWords=ConverterIntoWords(totalAmount);
+document.getElementById("PrintResultInWords").innerHTML="Words: "+resultInWords+" Rupees Only";
+
+},10)
+
+
+
+function EngResToSpeek(){
+    let speech = new SpeechSynthesisUtterance();
+//speech.lang = "hi";
+speech.text = resultInWords+" Rupees only";
+speech.volume = 1;
+speech.rate = .95;
+speech.pitch = 1;                
+
+window.speechSynthesis.speak(speech);
+}
+
+</script>
+
+
+
+
+ <br><br><br>
+</body>
+</html>
